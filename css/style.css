@@ -1,0 +1,130 @@
+
+/******* VAR *******/
+:root {
+    --black-color: #212529;
+    --white-color: #f3f3f3;
+    --gray-light-color: #dcdcdc;
+    --gray-color:#a4a4a4;
+}
+
+/******** RESET ******/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+
+/***** GENERAL *****/
+
+    html{
+        font-family: "Roboto", sans-serif;
+    }
+
+    header{
+        background-color: var(--gray-light-color);
+    }
+
+    body{
+        background-color: var(--white-color);
+        color: var(--black-color);
+        font-size: 1.5rem;
+    }
+
+    .navbar-toggler{
+        border: none;
+        background-color: transparent;
+    }
+    
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+
+    .btn__mio{
+        border-color: var(--gray-color);
+    }
+    
+    .btn__mio:hover{
+        background-color: var(--gray-color);
+        color: var(--white-color);
+    }
+
+    .color__box:focus{
+        box-shadow: 0 0 5px 2px var(--gray-color);
+        border-color: var(--gray-color);
+    }
+
+    .contenedor__busquedad{
+        grid-column: 1 / span 4; 
+    }
+
+    /***** Cards *******/
+
+    .contenedor-card{
+        width: 100%;
+        height: auto;
+    }
+
+    .contenedor-card-imagen{
+        width: 100%;
+    }
+
+    .imagen{
+        width: 100%;
+        height: 100%;
+        margin-bottom: .5rem;
+    }
+
+    .contenedor-card-informacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .titulo{
+        font-size: 1.5rem;
+    }
+
+    /**** GRIDS ******/
+
+    .contenedor-productos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+
+    /**** Media queries ****/
+
+@media screen and (max-width: 992px){
+
+    form.d-flex{
+        margin-bottom: .5rem;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .imagen__logo{
+        height: 50px;
+        width: 150px;
+    }
+
+    .contenedor-productos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .imagen{
+        padding: 1rem;
+    }
+
+}
+
