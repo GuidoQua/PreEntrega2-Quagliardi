@@ -532,7 +532,7 @@ botonBuscar.addEventListener("click", function(e) {
     return (producto.titulo.toLowerCase().includes(productoBuscado) || producto.categoria.nombre.toLowerCase().includes(productoBuscado) || producto.categoria.producto.toLowerCase().includes(productoBuscado));
     });
 
-    titulos.innerText = "Resultados de la busquedad"; //Cambio de título
+    titulos.innerText = "Resultados de la búsqueda"; //Cambio de título
 
     if (resultados.length > 0) {
         cargarProductos(resultados); //Reutilizo la función cargarProductos cambiando el parámetro
